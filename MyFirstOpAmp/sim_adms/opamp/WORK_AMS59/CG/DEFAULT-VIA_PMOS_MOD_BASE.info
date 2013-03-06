@@ -1,0 +1,37 @@
+[VHDL-AMS Entity]
+NAME = via_pmos_mod_base
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 603
+[Generics]
+(uo real)
+(w real)
+(l real)
+(vtp real)
+(roff real)
+(alpha real)
+(alpha_tc real)
+(beta real)
+(beta_tc real)
+(vtp_tc real)
+[Ports]
+(PORT TERMINAL io1 NO-MODE electrical)
+(PORT TERMINAL io2 NO-MODE electrical)
+(PORT TERMINAL g NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = default
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 612
+[Declarations]
+(QUANTITY v)
+(QUANTITY ileak)
+(QUANTITY i)
+(QUANTITY vio1)
+(QUANTITY vio2)
+(QUANTITY vg_vio1)
+(QUANTITY vg_vio2)
+(QUANTITY vio1_vg)
+(QUANTITY vio2_vg)
+(QUANTITY vio1_io2)
+(QUANTITY vio2_io1)
+(QUANTITY vg)
+

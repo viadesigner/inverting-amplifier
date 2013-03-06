@@ -1,0 +1,34 @@
+[VHDL-AMS Entity]
+NAME = via_res_2p
+SOURCE = C:\PROGRA~2\VIADES~1\Via_Models\hdl\via_res_2p.vhd
+LINE = 41
+[Generics]
+(numunitresistors integer "1")
+(desiredresistance real        6.500000e+003)
+(nominalresistance real        6.500000e+003)
+(actualresistance (real_vector ARRAY real 1 (0 2)) "(6500,5200,7913)")
+(parasitica2below (real_vector ARRAY real 1 (0 2)) "(2.42e-015,1.68e-015,5.71e-015)")
+(parasiticb2below (real_vector ARRAY real 1 (0 2)) "(2.42e-015,1.68e-015,5.71e-015)")
+(parasitica2above (real_vector ARRAY real 1 (0 2)) "(2.55e-015,2.37e-015,2.79e-015)")
+(parasiticb2above (real_vector ARRAY real 1 (0 2)) "(2.55e-015,2.37e-015,2.79e-015)")
+(parasitica (real_vector ARRAY real 1 (0 2)) "(4.97e-015,4.05e-015,8.5e-015)")
+(parasiticb (real_vector ARRAY real 1 (0 2)) "(4.97e-015,4.05e-015,8.5e-015)")
+(area integer "49")
+(lintempco real       -7.500000e+002)
+(quadtempco real        3.820000e+000)
+(arearesistortotal real        3.380000e+001)
+(mismatch real        6.500000e+000)
+(resistortype (string ARRAY character 1 (? ?)) "RES6K5W2P6")
+(shield (string ARRAY character 1 (? ?)) "substrate")
+(wizard (string ARRAY character 1 (? ?)) "resistor")
+[Ports]
+(PORT TERMINAL a NO-MODE electrical)
+(PORT TERMINAL b NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = level_0
+SOURCE = C:\PROGRA~2\VIADES~1\Via_Models\hdl\via_res_2p.vhd
+LINE = 84
+[Declarations]
+(QUANTITY v)
+(QUANTITY i)
+

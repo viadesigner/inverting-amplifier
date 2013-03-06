@@ -1,0 +1,274 @@
+                         *** Terminals ***
+0                                                           0
+avdd                                                        3.3
+avss                                                        0
+n1n4                                                        1.65003
+vcm                                                         1.65
+vin                                                         1.65
+vout                                                        1.65011
+yamp2.avdd                                                  3.3
+yamp2.avdd_avss_monitor.avdd                                3.3
+yamp2.avdd_avss_monitor.avdd_monitor.node_neg               0
+yamp2.avdd_avss_monitor.avdd_monitor.node_pos               3.3
+yamp2.avdd_avss_monitor.avss                                0
+yamp2.avdd_avss_monitor.avss_monitor.node                   0
+yamp2.avss                                                  0
+yamp2.cout                                                  1.65011
+yamp2.inn                                                   1.65003
+yamp2.inp                                                   1.65
+yamp2.inp_monitor.node_vin                                  1.65
+yamp2.inp_monitor.node_vneg                                 0
+yamp2.inp_monitor.node_vpos                                 3.3
+yamp2.p2                                                    1.65011
+yamp2.vout                                                  1.65011
+yr3.a                                                       1.65
+yr3.b                                                       1.65003
+yr4.a                                                       1.65003
+yr4.b                                                       1.65011
+yv1.neg                                                     0
+yv1.pos                                                     0
+yv2.neg                                                     0
+yv2.pos                                                     1.65
+yv3.neg                                                     1.65
+yv3.pos                                                     3.3
+yv_sine1.neg                                                1.65
+yv_sine1.pos                                                1.65
+
+
+                         *** Signals ***
+avdd#defhook#0                                              1
+yamp2.avdd_avss_monitor.avdd_monitor.in_time_domain         false
+yamp2.avdd_avss_monitor.avdd_monitor.value'above(2.5)       true
+yamp2.avdd_avss_monitor.avdd_monitor.value'above(3.6)       false
+yamp2.avdd_avss_monitor.avss_monitor.in_time_domain         false
+yamp2.avdd_avss_monitor.avss_monitor.value'above(-0.1)      true
+yamp2.avdd_avss_monitor.avss_monitor.value'above(0.1)       false
+yamp2.cv_out'above(0.078)                                   true
+yamp2.cv_out'above(<idx_5>)                                 false
+yamp2.en                                                    1
+yamp2.in_time_domain                                        false
+yamp2.in_val'above(-0.31704)                                true
+yamp2.in_val'above(0.31704)                                 false
+yamp2.inp_monitor.in_time_domain                            false
+yamp2.inp_monitor.vin'above(<idx_17>)                       true
+yamp2.inp_monitor.vin'above(<idx_18>)                       true
+yamp2.inp_monitor.vin'above(<idx_19>)                       true
+yamp2.inp_monitor.vin'above(<idx_20>)                       false
+yamp2.inp_monitor.vin'above(<idx_21>)                       false
+yamp2.inp_monitor.vin'above(<idx_22>)                       false
+yamp2.supply'above(2.5)                                     true
+yamp2.v_outcal'above(0)                                     true
+yamp2.v_outcal'above(<idx_8>)                               false
+
+
+                         *** Quantities ***
+yamp2.avdd_avss_monitor.avdd_monitor.value                  3.3
+yamp2.avdd_avss_monitor.avss_monitor.value                  0
+yamp2.ci_out                                                0
+yamp2.cv_out                                                1.65011
+yamp2.cv_out'dot                                            0
+yamp2.i_neg                                                 1.65003e-009
+yamp2.i_out                                                 -6.10567e-009
+yamp2.i_pos                                                 1.65e-009
+yamp2.i_supply                                              0.000736882
+yamp2.in_val                                                1.26908e-005
+yamp2.inp_monitor.vin                                       1.65
+yamp2.inp_monitor.vneg                                      0
+yamp2.inp_monitor.vpos                                      3.3
+yamp2.iout_val                                              4.00228e-010
+yamp2.ip2                                                   0
+yamp2.isoft                                                 1.14794e-041
+yamp2.stress_ratio_avdd3                                    0.66
+yamp2.supply                                                3.3
+yamp2.v_neg                                                 1.65003
+yamp2.v_neg'dot                                             0
+yamp2.v_out                                                 1.65011
+yamp2.v_outcal                                              1.65011
+yamp2.v_pos                                                 1.65
+yamp2.v_pos'dot                                             0
+yamp2.vcm                                                   1.44792e-005
+yamp2.vcm'dot                                               0
+yamp2.vp2                                                   1.65011
+yamp2.vp2'dot                                               0
+yamp2.vpsr                                                  4.16493e-005
+yamp2.vpsr_d                                                3.29996
+yamp2.vpsr_d'dot                                            0
+yamp2.vz                                                    8.34409e-011
+yr3.i                                                       -4.45564e-009
+yr3.ia                                                      0
+yr3.ib                                                      0
+yr3.v                                                       -2.89584e-005
+yr3.va                                                      1.65
+yr3.va'dot                                                  0
+yr3.vb                                                      1.65003
+yr3.vb'dot                                                  0
+yr4.i                                                       -6.10567e-009
+yr4.ia                                                      0
+yr4.ib                                                      0
+yr4.v                                                       -7.93648e-005
+yr4.va                                                      1.65003
+yr4.va'dot                                                  0
+yr4.vb                                                      1.65011
+yr4.vb'dot                                                  0
+yv1.ac_spec                                                 0
+yv1.i                                                       1.11022e-019
+yv1.v                                                       0
+yv2.ac_spec                                                 0
+yv2.i                                                       -0.000736879
+yv2.v                                                       1.65
+yv3.ac_spec                                                 0
+yv3.i                                                       -0.000736882
+yv3.v                                                       1.65
+yv_sine1.ac_spec                                            0
+yv_sine1.i                                                  4.45564e-009
+yv_sine1.phase_rad                                          0
+yv_sine1.v                                                  0
+
+
+                         *** Constants ***
+yamp2.ac_over_avol                                          5.76281e-006
+yamp2.ampstyle                                              general purpose
+yamp2.amptype                                               opamp
+yamp2.area                                                  7800
+yamp2.avdd_avss_monitor.avdd_monitor.error_cond             false
+yamp2.avdd_avss_monitor.avdd_monitor.max                    3.6
+yamp2.avdd_avss_monitor.avdd_monitor.min                    2.5
+yamp2.avdd_avss_monitor.avdd_monitor.name_neg               AVSS
+yamp2.avdd_avss_monitor.avdd_monitor.name_pos               AVDD
+yamp2.avdd_avss_monitor.avss_monitor.error_cond             false
+yamp2.avdd_avss_monitor.avss_monitor.max                    0.1
+yamp2.avdd_avss_monitor.avss_monitor.min                    -0.1
+yamp2.avdd_avss_monitor.avss_monitor.name                   AVSS
+yamp2.avol                                                  {102.3} {92.9} {100.1}
+yamp2.avol1                                                 130024
+yamp2.avol_nom                                              102
+yamp2.c0                                                    2.70076e-015
+yamp2.cin                                                   {0.36} {0.288} {0.432}
+yamp2.cin1                                                  3.6e-013
+yamp2.cmrr                                                  {104.8} {96} {104.3}
+yamp2.cmrr1                                                 173526
+yamp2.comp1                                                 4.29185e-013
+yamp2.corner                                                0
+yamp2.fpara                                                 {59} {225} {5.5}
+yamp2.fpara1                                                5.89296e+007
+yamp2.fzc                                                   {48.6} {202} {35.5}
+yamp2.fzc1                                                  48658.6
+yamp2.fzp                                                   {0.096} {0.595} {0.0846}
+yamp2.fzp1                                                  96.0905
+yamp2.gm1                                                   3.15367e-005
+yamp2.ibias                                                 {10} {18.45} {6.1}
+yamp2.ibias1                                                9.99839e-006
+yamp2.idd_nom                                               737
+yamp2.inp_monitor.error_cond                                false
+yamp2.inp_monitor.name_vin                                  INP
+yamp2.inp_monitor.vthn                                      0.445
+yamp2.inp_monitor.vthp                                      0.385
+yamp2.isratio                                               {73.7} {73.7} {73.7}
+yamp2.isratio1                                              73.7
+yamp2.load_max                                              20
+yamp2.load_min                                              2
+yamp2.psrr                                                  {98} {87.5} {94}
+yamp2.psrr1                                                 79232
+yamp2.r0                                                    1e+006
+yamp2.r1                                                    4.12294e+009
+yamp2.rin                                                   {1} {0.8} {1.2}
+yamp2.rin1                                                  1e+009
+yamp2.rout                                                  {0.95} {0.6} {1.6}
+yamp2.rout1                                                 950.434
+yamp2.sr                                                    {23.3} {42.9} {13.1}
+yamp2.sr1                                                   2.32962e+007
+yamp2.sr_nom                                                23
+yamp2.tau_z                                                 3.27085e-006
+yamp2.tc_avol                                               {-1273}{-1273}{-1273}
+yamp2.tc_cmrr                                               {-807}{-807}{-807}
+yamp2.tc_fpara                                              {-7954}{-7954}{-7954}
+yamp2.tc_fzc                                                {8042}{8042}{8042}
+yamp2.tc_fzp                                                {6286}{6286}{6286}
+yamp2.tc_ibias                                              {-1071}{-1071}{-1071}
+yamp2.tc_psrr                                               {-1496}{-1496}{-1496}
+yamp2.tc_rout                                               {3047}{3047}{3047}
+yamp2.tc_sr                                                 {-1084}{-1084}{-1084}
+yamp2.tc_ugb                                                {-2982}{-2982}{-2982}
+yamp2.tc_vos                                                {20}{20}{20}
+yamp2.ugb                                                   {11.7} {26} {6.33}
+yamp2.ugb1                                                  1.16948e+007
+yamp2.ugb_nom                                               12
+yamp2.vcmn                                                  {0.445} {0.4005} {0.4895}
+yamp2.vcmn1                                                 0.445
+yamp2.vcmp                                                  {0.385} {0.3465} {0.4235}
+yamp2.vcmp1                                                 0.385
+yamp2.vdsatn                                                {0.078} {0.0624} {0.0936}
+yamp2.vdsatn1                                               0.078
+yamp2.vdsatp                                                {0.114} {0.0912} {0.1368}
+yamp2.vdsatp1                                               0.114
+yamp2.vmax_in                                               0.31704
+yamp2.vos1                                                  0
+yamp2.vos_max                                               0.013
+yamp2.vos_mismatch                                          {0.0133} {0.0133} {0.0133}
+yamp2.wizard                                                Amplifier
+yamp2.zout                                                  1e+008
+yr3.actualresistance                                        {6500} {5200} {7913.04}
+yr3.area                                                    48
+yr3.arearesistortotal                                       33.8
+yr3.corner                                                  0
+yr3.desiredresistance                                       6500
+yr3.lintempco                                               -750
+yr3.mismatch                                                6.5
+yr3.mmll                                                    -0.0111803
+yr3.mmul                                                    0.0111803
+yr3.nominalresistance                                       6500
+yr3.numunitresistors                                        1
+yr3.parasitica                                              {4.97e-015} {4.05e-015} {8.5e-015}
+yr3.parasitica2above                                        {2.42e-015} {1.68e-015} {5.71e-015}
+yr3.parasitica2below                                        {2.55e-015} {2.37e-015} {2.79e-015}
+yr3.parasiticb                                              {4.97e-015} {4.05e-015} {8.5e-015}
+yr3.parasiticb2above                                        {2.42e-015} {1.68e-015} {5.71e-015}
+yr3.parasiticb2below                                        {2.55e-015} {2.37e-015} {2.79e-015}
+yr3.quadtempco                                              3.82
+yr3.rescomplex                                              6499.27
+yr3.resistortype                                            RES6K5W2P6
+yr3.shield                                                  substrate
+yr3.variation                                               0
+yr3.wizard                                                  resistor
+yr4.actualresistance                                        {13000} {10400} {15826.1}
+yr4.area                                                    97
+yr4.arearesistortotal                                       67.6
+yr4.corner                                                  0
+yr4.desiredresistance                                       13000
+yr4.lintempco                                               -750
+yr4.mismatch                                                6.5
+yr4.mmll                                                    -0.00790569
+yr4.mmul                                                    0.00790569
+yr4.nominalresistance                                       13000
+yr4.numunitresistors                                        2
+yr4.parasitica                                              {9.94e-015} {8.1e-015} {1.7e-014}
+yr4.parasitica2above                                        {4.84e-015} {3.36e-015} {1.142e-014}
+yr4.parasitica2below                                        {5.1e-015} {4.74e-015} {5.58e-015}
+yr4.parasiticb                                              {9.94e-015} {8.1e-015} {1.7e-014}
+yr4.parasiticb2above                                        {4.84e-015} {3.36e-015} {1.142e-014}
+yr4.parasiticb2below                                        {5.1e-015} {4.74e-015} {5.58e-015}
+yr4.quadtempco                                              3.82
+yr4.rescomplex                                              12998.5
+yr4.resistortype                                            RES6K5W2P6
+yr4.shield                                                  substrate
+yr4.variation                                               0
+yr4.wizard                                                  resistor
+yv1.ac_mag                                                  0
+yv1.ac_phase                                                0
+yv1.level                                                   0
+yv2.ac_mag                                                  0
+yv2.ac_phase                                                0
+yv2.level                                                   1.65
+yv3.ac_mag                                                  0
+yv3.ac_phase                                                0
+yv3.level                                                   1.65
+yv_sine1.ac_mag                                             0
+yv_sine1.ac_phase                                           0
+yv_sine1.amplitude                                          0.5
+yv_sine1.df                                                 0
+yv_sine1.freq                                               500
+yv_sine1.offset                                             0
+yv_sine1.phase                                              0
+yv_sine1.v_limit                                            0.0001
+
+

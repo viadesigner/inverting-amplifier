@@ -1,0 +1,13 @@
+[VHDL-AMS Entity]
+NAME = via_monitor_supply_20v
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 444
+[Generics]
+[Ports]
+(PORT TERMINAL hvdd NO-MODE electrical)
+(PORT TERMINAL hvss NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = monitor
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 448
+

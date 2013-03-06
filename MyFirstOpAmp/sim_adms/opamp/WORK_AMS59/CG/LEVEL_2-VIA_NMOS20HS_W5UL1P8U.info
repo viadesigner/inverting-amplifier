@@ -1,0 +1,35 @@
+[VHDL-AMS Entity]
+NAME = via_nmos20hs_w5ul1p8u
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 939
+[Generics]
+(gfs_o (corners_real ARRAY real 1 (0 2)) "(0.00014,0.000126,0.000154)")
+(gfs_tc real       -2.500000e+003)
+(vgs_th_o (corners_voltage ARRAY real 1 (0 2)) "(1.28,1.48,1.68)")
+(vgs_th_tc real       -1.030000e+002)
+(id_gfs_cal real        8.000000e-004)
+(r_source real        2.000000e+003)
+(r_drain real        2.000000e+003)
+(slope_on_adjust real        5.000000e-002)
+(cgd real        3.250000e-015)
+(cgs real        3.250000e-015)
+(m_scale integer "1")
+[Ports]
+(PORT TERMINAL drain NO-MODE electrical)
+(PORT TERMINAL gate NO-MODE electrical)
+(PORT TERMINAL source NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = level_2
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 952
+[Declarations]
+(QUANTITY vds)
+(QUANTITY ids)
+(QUANTITY vgs)
+(QUANTITY ic_gs)
+(QUANTITY vgd)
+(QUANTITY ic_gd)
+(QUANTITY vsd)
+(QUANTITY vs)
+(QUANTITY vd)
+

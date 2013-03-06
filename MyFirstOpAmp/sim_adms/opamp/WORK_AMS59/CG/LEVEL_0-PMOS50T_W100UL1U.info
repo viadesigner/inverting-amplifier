@@ -1,0 +1,37 @@
+[VHDL-AMS Entity]
+NAME = pmos50t_w100ul1u
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 1161
+[Generics]
+(gfs_o (corners_real ARRAY real 1 (0 2)) "(0.0032,0.0035,0.0029)")
+(gfs_tc real       -1.000000e+003)
+(vgs_th_o (corners_voltage ARRAY real 1 (0 2)) "(-0.6,-0.55,-0.65)")
+(vgs_th_tc real        1.111000e+003)
+(id_gfs_cal real       -1.500000e-003)
+(rds_on real        3.500000e+002)
+(slope_on_adjust real        1.000000e+000)
+(crss real        1.510000e-013)
+(ciss real        4.540000e-013)
+(coss real        2.624000e-013)
+(m_scale integer "1")
+[Ports]
+(PORT TERMINAL drain NO-MODE electrical)
+(PORT TERMINAL gate NO-MODE electrical)
+(PORT TERMINAL source NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = level_0
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 1214
+[Declarations]
+(TERMINAL drain_internal)
+(QUANTITY v_residual)
+(QUANTITY i_residual)
+(QUANTITY vds)
+(QUANTITY ic_ds)
+(QUANTITY vx)
+(QUANTITY ids)
+(QUANTITY vgs)
+(QUANTITY ic_gs)
+(QUANTITY vdg)
+(QUANTITY ic_dg)
+

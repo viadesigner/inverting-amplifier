@@ -1,0 +1,18 @@
+[VHDL-AMS Entity]
+NAME = via_pfet_basic
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 775
+[Generics]
+(w real)
+(l real)
+(vth real       -7.200000e-001)
+(kprim real        5.800000e-005)
+[Ports]
+(PORT TERMINAL d NO-MODE electrical)
+(PORT TERMINAL s NO-MODE electrical)
+(PORT TERMINAL g NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = detailed
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 792
+

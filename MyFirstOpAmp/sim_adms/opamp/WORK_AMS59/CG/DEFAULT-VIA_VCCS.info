@@ -1,0 +1,26 @@
+[VHDL-AMS Entity]
+NAME = via_vccs
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 1274
+[Generics]
+(gm real        1.000000e+000)
+(vsat real        3.000000e-001)
+[Ports]
+(PORT TERMINAL p_ip NO-MODE electrical)
+(PORT TERMINAL p_in NO-MODE electrical)
+(PORT TERMINAL p_vp NO-MODE electrical)
+(PORT TERMINAL p_vn NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = default
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 1296
+[Declarations]
+(QUANTITY v_pn)
+(QUANTITY i_pn)
+(QUANTITY v_c)
+(QUANTITY v_thresh)
+(QUANTITY i_pn1)
+(QUANTITY i_pn2)
+(QUANTITY i_pn3)
+(QUANTITY i_pn4)
+

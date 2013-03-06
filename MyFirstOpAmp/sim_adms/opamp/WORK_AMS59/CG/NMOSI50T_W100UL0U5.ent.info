@@ -1,0 +1,21 @@
+[VHDL-AMS Entity]
+NAME = nmosi50t_w100ul0u5
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 1046
+[Generics]
+(gfs_o (corners_real ARRAY real 1 (0 2)) "(0.008,0.0088,0.0072)")
+(gfs_tc real       -1.000000e+003)
+(vgs_th_o (corners_voltage ARRAY real 1 (0 2)) "(0.6,0.55,0.65)")
+(vgs_th_tc real       -1.111000e+003)
+(id_gfs_cal real        5.000000e-003)
+(rds_on real        3.500000e+002)
+(slope_on_adjust real        5.000000e-002)
+(crss real        7.500000e-014)
+(ciss real        2.270000e-013)
+(coss real        1.830000e-013)
+(m_scale integer "1")
+[Ports]
+(PORT TERMINAL drain NO-MODE electrical)
+(PORT TERMINAL gate NO-MODE electrical)
+(PORT TERMINAL source NO-MODE electrical)
+

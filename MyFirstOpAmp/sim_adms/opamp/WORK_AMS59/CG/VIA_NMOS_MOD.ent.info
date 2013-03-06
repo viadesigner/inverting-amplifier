@@ -1,0 +1,24 @@
+[VHDL-AMS Entity]
+NAME = via_nmos_mod
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 697
+[Generics]
+(un real)
+(w real)
+(l real)
+(ld real)
+(vtn real)
+(roff real)
+(ro real)
+(alpha real)
+(beta real)
+(beta_tc real)
+(alpha_tc real)
+(vtn_tc real)
+(ad_n real)
+(as_n real)
+[Ports]
+(PORT TERMINAL d NO-MODE electrical)
+(PORT TERMINAL s NO-MODE electrical)
+(PORT TERMINAL g NO-MODE electrical)
+

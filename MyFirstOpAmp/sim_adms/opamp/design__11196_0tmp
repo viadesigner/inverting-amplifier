@@ -1,4 +1,6 @@
-* Command file for design: opamp
+*title
+.option eldo_debug
+.op
 * Top Spice file: ..\..\genhdl\opamp\opamp.cir
 .op
 .tran 0 5m 0

@@ -1,0 +1,14 @@
+[VHDL-AMS Entity]
+NAME = via_monitor_nodediff
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 297
+[Generics]
+(max real)
+(min real)
+(name_pos (string ARRAY character 1 (? ?)))
+(name_neg (string ARRAY character 1 (? ?)))
+(error_cond boolean)
+[Ports]
+(PORT TERMINAL node_pos NO-MODE electrical)
+(PORT TERMINAL node_neg NO-MODE electrical)
+

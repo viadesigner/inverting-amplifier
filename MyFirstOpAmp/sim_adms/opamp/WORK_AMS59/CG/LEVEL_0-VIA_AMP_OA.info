@@ -1,0 +1,62 @@
+[VHDL-AMS Entity]
+NAME = via_amp_oa
+SOURCE = C:\PROGRA~2\VIADES~1\Via_Models\hdl\via_amp_oa.vhd
+LINE = 41
+[Generics]
+(load_max integer "20")
+(load_min integer "2")
+(idd_nom real        7.370000e+002)
+(ugb_nom real        1.170000e+001)
+(avol_nom real        1.023000e+002)
+(sr_nom real        2.320000e+001)
+(vos_max real        1.320000e+001)
+(vos_mismatch (real_vector ARRAY real 1 (0 2)) "(0.0132,0.0132,0.0132)")
+(tc_vos (integer_vector ARRAY integer 1 (0 2)) "(20,20,20)")
+(ibias (real_vector ARRAY real 1 (0 2)) "(10,18.45,6.1)")
+(tc_ibias (integer_vector ARRAY integer 1 (0 2)) "(-1071,-1071,-1071)")
+(avol (real_vector ARRAY real 1 (0 2)) "(102.3,92.9,100.1)")
+(tc_avol (integer_vector ARRAY integer 1 (0 2)) "(-1273,-1273,-1273)")
+(ugb (real_vector ARRAY real 1 (0 2)) "(11.7,26,6.33)")
+(tc_ugb (integer_vector ARRAY integer 1 (0 2)) "(-2982,-2982,-2982)")
+(cmrr (real_vector ARRAY real 1 (0 2)) "(104.8,96,104.3)")
+(tc_cmrr (integer_vector ARRAY integer 1 (0 2)) "(-807,-807,-807)")
+(sr (real_vector ARRAY real 1 (0 2)) "(23.3,42.9,13.1)")
+(tc_sr (integer_vector ARRAY integer 1 (0 2)) "(-1084,-1084,-1084)")
+(psrr (real_vector ARRAY real 1 (0 2)) "(98,87.5,94)")
+(tc_psrr (integer_vector ARRAY integer 1 (0 2)) "(-1496,-1496,-1496)")
+(rout (real_vector ARRAY real 1 (0 2)) "(0.95,0.6,1.6)")
+(tc_rout (integer_vector ARRAY integer 1 (0 2)) "(3047,3047,3047)")
+(fpara (real_vector ARRAY real 1 (0 2)) "(59,225,5.5)")
+(tc_fpara (integer_vector ARRAY integer 1 (0 2)) "(-7954,-7954,-7954)")
+(fzp (real_vector ARRAY real 1 (0 2)) "(0.096,0.595,0.0846)")
+(tc_fzp (integer_vector ARRAY integer 1 (0 2)) "(6286,6286,6286)")
+(fzc (real_vector ARRAY real 1 (0 2)) "(48.6,202,35.5)")
+(tc_fzc (integer_vector ARRAY integer 1 (0 2)) "(8042,8042,8042)")
+(cin (real_vector ARRAY real 1 (0 2)) "(0.36,0.288,0.432)")
+(rin (real_vector ARRAY real 1 (0 2)) "(1,0.8,1.2)")
+(vcmn (real_vector ARRAY real 1 (0 2)) "(0.445,0.4005,0.4895)")
+(vcmp (real_vector ARRAY real 1 (0 2)) "(0.385,0.3465,0.4235)")
+(vdsatp (real_vector ARRAY real 1 (0 2)) "(0.114,0.0912,0.1368)")
+(vdsatn (real_vector ARRAY real 1 (0 2)) "(0.078,0.0624,0.0936)")
+(isratio (real_vector ARRAY real 1 (0 2)) "(73.7,73.7,73.7)")
+(wizard (string ARRAY character 1 (? ?)) "Amplifier")
+(amptype (string ARRAY character 1 (? ?)) "opamp")
+(ampstyle (string ARRAY character 1 (? ?)) "general purpose")
+(area integer "7800")
+[Ports]
+(PORT TERMINAL inp NO-MODE electrical)
+(PORT TERMINAL inn NO-MODE electrical)
+(PORT SIGNAL en IN std_ulogic)
+(PORT TERMINAL avdd NO-MODE electrical)
+(PORT TERMINAL avss NO-MODE electrical)
+(PORT TERMINAL vout NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = level_0
+SOURCE = C:\PROGRA~2\VIADES~1\Via_Models\hdl\via_amp_oa.vhd
+LINE = 109
+[Declarations]
+(QUANTITY v_in)
+(QUANTITY i_in)
+(QUANTITY v_out)
+(QUANTITY i_out)
+

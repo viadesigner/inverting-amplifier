@@ -1,0 +1,19 @@
+[VHDL-AMS Entity]
+NAME = via_monitor_node
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 250
+[Generics]
+(max real)
+(min real)
+(name (string ARRAY character 1 (? ?)))
+(error_cond boolean)
+[Ports]
+(PORT TERMINAL node NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = monitor
+SOURCE = C:\PROGRA~2\VIADES~1\ViaDesignerPkg\hdl\VIADESIGNER_PLATFORM.VHD
+LINE = 258
+[Declarations]
+(QUANTITY value)
+(SIGNAL in_time_domain boolean)
+
