@@ -1,0 +1,21 @@
+LIST TESTBENCHES
+opamp
+ENDLIST
+ACTIVE_TESTBENCH opamp
+SECTION opamp
+TYPE SCH
+NL_OPTION SPICE ENTINST USELIBS PAREXT
+SIM_SPICE 1
+DESIGN_ROOT genhdl\opamp\opamp.cir
+LIST VHDL
+C:\PROGRA~2\VIADES~1\Via_Models\hdl\via_amp_oa.vhd
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\v_constant.vhd
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\v_sine.vhd
+C:\PROGRA~2\VIADES~1\Via_Models\hdl\via_res_2p.vhd
+ENDLIST
+LIST SPICE
+genhdl\opamp\opamp.cir
+ENDLIST
+ENDSECTION
+LIST ADDITIONAL ADMS LIBRARIES
+ENDLIST

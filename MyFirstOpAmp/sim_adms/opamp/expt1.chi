@@ -1,0 +1,310 @@
+1*******25-Feb-13 *******  SystemVision Version 5.9  (Version 5.9)  *******11:25:27******
+
+0* Command file for design: opamp
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  * Top Spice file: ..\..\genhdl\opamp\opamp.cir
+    3  .OP
+    4  .TRAN 0 1M 0
+    5  * .ac dec 100  
+    6  .PLOT TRAN SG(AVDD#DEFHOOK#0) V(AVDD) V(AVSS) V(N1N4) V(VCM) V(VIN) V(VOUT)
+    7  * .plot ac V(avdd) V(avss) V(n1n4) V(vcm) V(vin) V(vout)
+    8  .OPTION eps=1.0e-7
+    9  .OPTION hmin=1.0e-12
+   10  .OPTION print_dc=1
+   11  * save tr toplevel
+   12  * save ac toplevel
+   13  * save ba
+   14  
+   15  .SAVE file=opamp.iic end no_save_wdb
+   16  * .plot dc V(avdd) V(avss) V(n1n4) V(vcm) V(vin) V(vout)
+   17  ** including ..\..\genhdl\opamp\opamp.cir
+    1  
+    2  * Project OPAMP
+    3  * Mentor Graphics Netlist Created with Version 5.8
+    4  * File created Mon Feb 25 11:25:06 2013
+    5  * Inifile   : 
+    6  *
+    7  * Config file: C:\MentorGraphics\SystemVision5.9\standard\svspice.cfg
+    8  *
+    9  * Options   : -_ -h -kC:\MentorGraphics\SystemVision5.9\standard\svspice.cfg -gopamp.tempfile 
+   10  * 
+   11  * Levels    : 
+   12  * 
+   13  .OPTION noinclib
+   14  * Models for Eldo<->VHDL-AMS data conversion
+   15  .MODEL A2D_ELDO A2D MODE=STD_LOGIC VTH=1.65
+   16  .MODEL D2A_ELDO D2A MODE=STD_LOGIC VHI=3.3 VLO=0.0
+   17  .DEFHOOK a2d_eldo
+   18  .DEFHOOK d2a_eldo
+   19  .PARAM PROCESS_CORNER=0
+   20  YAMP2 VIA_AMP_OA(LEVEL_2) GENERIC: AVOL="(102.3,92.9,100.1)" AVOL_NOM="102" 
+   21  + CMRR="(104.8,96.0,104.3)" FPARA="(59.0,225.0,5.5)" FZC="(48.6,202.0,35.5)" 
+   22  + FZP="(0.096,0.595,0.0846)" IBIAS="(10.0,18.45,6.1)" IDD_NOM="737" 
+   23  + ISRATIO="(73.7,73.7,73.7)" PSRR="(98.0,87.5,94.0)" ROUT="(0.95,0.6,1.6)" 
+   24  + SR="(23.3,42.9,13.1)" SR_NOM="23" TC_AVOL="(-1273,-1273,-1273)" 
+   25  + TC_CMRR="(-807,-807,-807)" TC_FPARA="(-7954,-7954,-7954)" 
+   26  + TC_FZC="(8042,8042,8042)" TC_FZP="(6286,6286,6286)" 
+   27  + TC_PSRR="(-1496,-1496,-1496)" TC_ROUT="(3047,3047,3047)" 
+   28  + TC_SR="(-1084,-1084,-1084)" TC_UGB="(-2982,-2982,-2982)" 
+   29  + UGB="(11.7,26.0,6.33)" UGB_NOM="12" VOS_MAX="0.013" 
+   30  + VOS_MISMATCH="(0.0133,0.0133,0.0133)" PORT: VCM N1N4 AVDD AVDD AVSS VOUT
+   31  YV1 V_CONSTANT(IDEAL) GENERIC: LEVEL="0.0" PORT: AVSS 0
+   32  YV_SINE1 V_SINE(IDEAL) GENERIC: AMPLITUDE="0.5" FREQ="500.0" PORT: VIN VCM
+   33  YV2 V_CONSTANT(IDEAL) GENERIC: LEVEL="1.65" PORT: VCM AVSS
+   34  YV3 V_CONSTANT(IDEAL) GENERIC: LEVEL="1.65" PORT: AVDD VCM
+   35  YR3 VIA_RES_2P(LEVEL_2) GENERIC: 
+   36  + ACTUALRESISTANCE="(6500.0,5200.0,7913.04347826)" AREA="48" 
+   37  + PARASITICA="(4.97E-15,4.05E-15,8.5E-15)" 
+   38  + PARASITICA2ABOVE="(2.42E-15,1.68E-15,5.71E-15)" 
+   39  + PARASITICA2BELOW="(2.55E-15,2.37E-15,2.79E-15)" 
+   40  + PARASITICB="(4.97E-15,4.05E-15,8.5E-15)" 
+   41  + PARASITICB2ABOVE="(2.42E-15,1.68E-15,5.71E-15)" 
+   42  + PARASITICB2BELOW="(2.55E-15,2.37E-15,2.79E-15)" PORT: VIN N1N4
+   43  YR4 VIA_RES_2P(LEVEL_2) GENERIC: 
+   44  + ACTUALRESISTANCE="(13000.0,10400.0,15826.0869565)" AREA="97" 
+   45  + AREARESISTORTOTAL="67.6" DESIREDRESISTANCE="13E3" NOMINALRESISTANCE="13000" 
+   46  + NUMUNITRESISTORS="2" PARASITICA="(9.94E-15,8.1E-15,1.7E-14)" 
+   47  + PARASITICA2ABOVE="(4.84E-15,3.36E-15,1.142E-14)" 
+   48  + PARASITICA2BELOW="(5.1E-15,4.74E-15,5.58E-15)" 
+   49  + PARASITICB="(9.94E-15,8.1E-15,1.7E-14)" 
+   50  + PARASITICB2ABOVE="(4.84E-15,3.36E-15,1.142E-14)" 
+   51  + PARASITICB2BELOW="(5.1E-15,4.74E-15,5.58E-15)" PORT: N1N4 VOUT
+   52  * DICTIONARY 1
+   53  * GND = 0
+   54  .GLOBAL ELECTRICAL_REF
+   55  .MODEL VIA_RES_2P(LEVEL_2) MACRO LANG=VHDLAMS LIB=WORK
+   56  .MODEL V_CONSTANT(IDEAL) MACRO LANG=VHDLAMS LIB=EDULIB
+   57  .MODEL VIA_AMP_OA(LEVEL_2) MACRO LANG=VHDLAMS LIB=WORK
+   58  .MODEL V_SINE(IDEAL) MACRO LANG=VHDLAMS LIB=EDULIB
+   59  *END
+   17  
+   18  .END
+
+End of file 
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+
+***** GENERATION ...
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+
+Memory space allocated (bytes): 122233
+11 elements
+8 nodes 
+0 input signals
+1 functional instances
+
+ SystemVision Version 5.9 Mon May 14 19:27:45 GMT 2012
+
+
+*** DATE: 25-Feb-2013  11:25:27
+
+*** TITLE: * Command file for design: opamp
+
+TEMPERATURE : 27.000000 degrees C
+
+Searching Operating Point between -3.000000E+013V and 
+                                  3.000000E+013V
+
+
+
+1***************25-Feb-2013 ***********************  SystemVision Version 5.9  (Build Date Mon May 14 19:27:45 GMT 2012)  ***********************11:25:27*****************
+
+0* Command file for design: opamp
+0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+*** DC Control Options : 
+
+GMIN           = 1.00e-012 NMAXSIZE       = 60000    ITL1           = 100      
+GRAMP          = 0        NETSIZE        = 100      VMIN           = UNDEF    
+VMAX           = UNDEF    
+
+*** Accuracy Control Options : 
+
+ITOL           = 1.00e-006 EPS            = 1.00e-007 VNTOL          = 1.00e-007 
+RELTOL         = 5.00e-005 RELERR         = 5.00e-002 PIVREL         = 1.00e-003 
+PIVTOL         = 1.00e-013 ABSTOL         = 1.00e-013 FLXTOL         = 1.00e-011 
+MAXORD         = 2.00e+000 
+
+*** Time-step Control Options : 
+
+ZOOMTIME       = 1.00e+000 STEP           = 0.00e+000 STARTSMP       = 0.00e+000 
+FREQSMP        = 0.00e+000 COURESOL       = 0.00e+000 TRTOL          = 7.00e+000 
+HMIN           = 1.00e-012 ITL3           = 3        ITL4           = 13       
+FT             = 1.25e-001 DCLOG          = 1.00e+000 LVLTIM         = 2        
+LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-001 
+ABSVAR         = 2.00e-001 SAMPLE         = 0.00e+000 HMAX           = UNDEF    
+
+
+*** MosFet default Options : 
+
+SCALE          = 1.00e+000 SCALM          = 1.00e+000 SCALEBSIM      = 1.00e+000 
+DEFAD          = UNDEF    DEFAS          = UNDEF    DEFPD          = UNDEF    
+DEFPS          = UNDEF    DEFW           = 1.00e-004 DEFL           = 1.00e-004 
+DEFNRD         = UNDEF    DEFNRS         = UNDEF    XA             = 6.00e-006 
+LIMRMOS        = UNDEF    SHRINK         = 1.00e+000 
+
+*** General Information Options : 
+
+SDA            = 0        CPTIME         = UNDEF    STAT           = 0        
+TIMEDIV        = 0        SIMUDIV        = 0        SAVETIME       = 0        
+MAXTRAN        = 1000     MAXNODES       = 500      MAXV           = 1.00e+013 
+LIMPROBE       = 1000     FLICKER_NOISE  = 0        THERMAL_NOISE  = 0        
+TNOM           = 2.70e+001 TMAX           = UNDEF    
+SPICDC         = 0        SPIOUT         = 0        NEWTON         = 1        
+OSR            = 0        TRAP           = 1        GEAR           = 0        
+BE             = 0        PROBEOP        = 0        NOLAT          = 0        
+NWLAT          = 0        ANALOG         = 0        BBDEBUG        = 0        
+NOSIZECHK      = 0        QTRUNC         = 0        UNBOUND        = 0        
+LCAPOP         = 0        STVER          = 0        MOTOROLA       = 0        
+AMS            = 0        ASPEC          = 0        INPUT          = 0        
+NOINIT         = 0        PSF            = 0        WSF            = 0        
+WSFASCII       = 0        NOBIN          = 0        NOCOU          = 1        
+WL             = 0        NODE           = 0        LIST           = 0        
+SPI3BIN        = 0        SPI3ASC        = 0        NOMOD          = 0        
+WSF            = 0        WSFASCII       = 0        NOBIN          = 0        
+NOCOU          = 1        WL             = 0        NODE           = 0        
+LIST           = 0        SPI3BIN        = 0        SPI3ASC        = 0        
+NOMOD          = 0        RMOS           = 0        NWRMOS         = 1        
+NONWRMOS       = 0        USEDEFAP       = 0        NOASCII        = 0        
+NOAEX          = 0        AEX            = 0        AEX            = 0        
+ASCII          = 1        MIXED          = 0        SWITCH         = 0        
+USERSWITCH     = 0        TIMING         = 0        MODWL          = 1        
+ULOGIC         = 0        
+
+
+Number of iterations: 79
+
+
+
+
+1***************25-Feb-2013 ***********************  SystemVision Version 5.9  (Build Date Mon May 14 19:27:45 GMT 2012)  ***********************11:25:27*****************
+
+0* Command file for design: opamp
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
+AVDD         3.3000E+000  AVSS         0.0         N1N4         1.6500E+000  
+VCM          1.6500E+000  VIN          1.6500E+000  VOUT         1.6500E+000  
+YAMP2.COUT   3.1860E+000  YAMP2.P2     3.1860E+000  
+
+
+
+SystemVision requires another DC analysis
+Number of iterations: 23
+
+
+
+
+1***************25-Feb-2013 ***********************  SystemVision Version 5.9  (Build Date Mon May 14 19:27:45 GMT 2012)  ***********************11:25:27*****************
+
+0* Command file for design: opamp
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
+AVDD         3.3000E+000  AVSS         0.0         N1N4         1.6500E+000  
+VCM          1.6500E+000  VIN          1.6500E+000  VOUT         1.6501E+000  
+YAMP2.COUT   1.6501E+000  YAMP2.P2     1.6501E+000  
+
+
+
+SystemVision requires another DC analysis
+Number of iterations: 1
+
+
+
+
+1***************25-Feb-2013 ***********************  SystemVision Version 5.9  (Build Date Mon May 14 19:27:45 GMT 2012)  ***********************11:25:27*****************
+
+0* Command file for design: opamp
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
+AVDD         3.3000E+000  AVSS         0.0         N1N4         1.6500E+000  
+VCM          1.6500E+000  VIN          1.6500E+000  VOUT         1.6501E+000  
+YAMP2.COUT   1.6501E+000  YAMP2.P2     1.6501E+000  
+
+
+
+
+1***************25-Feb-2013 ***********************  SystemVision Version 5.9  (Build Date Mon May 14 19:27:45 GMT 2012)  ***********************11:25:27*****************
+
+0* Command file for design: opamp
+
+0****                 OPERATING POINT INFORMATION                          TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+1***************25-Feb-2013 ***********************  SystemVision Version 5.9  (Build Date Mon May 14 19:27:45 GMT 2012)  ***********************11:25:27*****************
+
+0* Command file for design: opamp
+0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+    NUNODS NCNODS NUMNOD   NUMEL   DIODES    BJT  JFET  MOSFET
+
+         6      8      8      11        0      0     0       0
+
+
+    NSTOP    NTERM    PERSPA  
+
+       34      762 3.408e+001
+
+    NUMTTP  NUMRTP  LTERTP  LTERTPNW NWNOCON
+
+      2046       0       0       0       0
+
+  DIGITAL  INWCALL    ITERNW   MEMSIZE
+
+        0     44202.157e+000    150130
+
+    NDEVCALL       NKIRCH  NMAXCALL      ITERM     LATENCY
+
+           0            0         3   1.00e+000   0.000e+000%
+
+
+  TRANSIENT JOB TIME                 0
+
+
+
+CPU time 0.25 s
+
+Save file C:/Mentor_Projects/MyFirstOpAmp/sim_adms/opamp/opamp.iic created  at time 1.000000e-003
+
